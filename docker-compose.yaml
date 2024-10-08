@@ -7,4 +7,7 @@ services:
     ports:
       - '5000:5000'
     volumes:
-      - './uffd-instance:/uffd/instance'
+      - 'uffd_instance:/uffd/instance'
+
+volumes:
+  uffd_instance:
