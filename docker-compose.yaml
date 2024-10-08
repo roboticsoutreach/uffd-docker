@@ -9,7 +9,12 @@ services:
     volumes:
       - 'uffd_instance:/uffd/instance'
       - 'data:/data'
+    networks:
+      - webnet
 
 volumes:
   uffd_instance:
   data:
+
+networks:
+  webnet:
