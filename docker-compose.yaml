@@ -8,6 +8,11 @@ services:
       - '5000:5000'
     volumes:
       - 'uffd_instance:/uffd/instance'
+      - 'data:/data'
+    networks:
+      - uffd_default
+      - nginx-proxy-manager_default
 
 volumes:
   uffd_instance:
+  data:
