@@ -21,4 +21,5 @@ COPY uffd/ /uffd
 
 WORKDIR /uffd
 
+ENV FLASK_APP=uffd
 CMD flask db upgrade && flask run 
