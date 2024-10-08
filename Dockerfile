@@ -22,4 +22,4 @@ COPY uffd/ /uffd
 WORKDIR /uffd
 
 ENV FLASK_APP=uffd
-CMD flask db upgrade && flask run 
+CMD flask db upgrade && flask run --host=0.0.0.0
