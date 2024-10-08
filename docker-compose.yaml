@@ -10,8 +10,7 @@ services:
       - 'uffd_instance:/uffd/instance'
       - 'data:/data'
     networks:
-      - uffd_default
-      - nginx-proxy-manager_default
+      - webnet
 
 volumes:
   uffd_instance:
